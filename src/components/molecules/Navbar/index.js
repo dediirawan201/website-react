@@ -15,7 +15,7 @@ const Navbar = () => {
                     <li>Contact</li>
                 </ul>
                 </div>
-            <div className="button">
+            <div className="button"> 
                 Join Today
             </div>
             </div> 

@@ -1,4 +1,4 @@
-import { Navbar, Intro } from '../src/components';
+import { Navbar, Intro,IntoShape,AnimatedShapes } from '../src/components';
 import './app.scss';
 
 function App() {
@@ -6,6 +6,8 @@ function App() {
     <div className="container">
       <Navbar />
       <Intro />
+      <IntoShape />
+      <AnimatedShapes/>
       </div>
   );
 } 
