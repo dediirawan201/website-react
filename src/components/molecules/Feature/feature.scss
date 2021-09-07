@@ -1,0 +1,42 @@
+.container-feature {
+    display: flex;
+    height: 100vh;
+    .left {
+        width: 80%;
+    }
+
+    .right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            font-size: 70px;
+        }
+
+        .subTitle{
+            font-size: 24px;
+            font-style: italic;
+            color: #333;
+            margin-top: 30px;
+        }
+        .desc{
+            font-size: 20px;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        .btn {
+            width: 150px;
+            border: none;
+            padding: 15px 20px;
+            background-color: darkblue;
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+}
