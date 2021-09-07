@@ -1,5 +1,5 @@
 import { Navbar, Intro,IntoShape,AnimatedShapes,Feature,FeatureShape,Service,ServiceShape,Price,
-PriceShape
+PriceShape,Contact
 } from '../src/components';
 import './app.scss';
 
@@ -24,6 +24,9 @@ function App() {
       <div className="container">
         <Price/>
         <PriceShape/>
+      </div>
+      <div className="container">
+        <Contact/>
       </div>
       </>
   );
