@@ -1,4 +1,6 @@
-import { Navbar, Intro,IntoShape,AnimatedShapes,Feature,FeatureShape,Service,ServiceShape} from '../src/components';
+import { Navbar, Intro,IntoShape,AnimatedShapes,Feature,FeatureShape,Service,ServiceShape,Price,
+PriceShape
+} from '../src/components';
 import './app.scss';
 
 function App() {
@@ -18,6 +20,10 @@ function App() {
       <div className="container">
         <Service/>
         <ServiceShape/>
+      </div>
+      <div className="container">
+        <Price/>
+        <PriceShape/>
       </div>
       </>
   );
