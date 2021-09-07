@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MiniCard } from '../../atoms';
 import './service.scss';
+import ReactPlayer from 'react-player';
 
 const Service = () => {
+    const [open, setOpen] = useState(false);
     return (
         <div className="container-service">
             <div className="left">
-                <img src="img/service.png" />
+                <img className={( open && "buka")} src="img/service.png" />
+                <ReactPlayer className={( !open &&  "buka")}  url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+     
             </div>
             <div className="right">
                 <div className="wrapper">
@@ -19,7 +23,7 @@ const Service = () => {
                         <MiniCard/>
                         <MiniCard/>
                     </div> 
-                    <button className="btn">
+                    <button className="btn" onClick={() => setOpen(true)}>
                         <img src="img/play.png"/> How It Works
                     </button>
                 </div>
