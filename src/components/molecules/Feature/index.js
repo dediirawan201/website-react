@@ -9,9 +9,9 @@ const Feature = () => {
             </div>
             <div className="right">
                 <span className="title">
-                    <b>good</b> design<br/>
-                    <b>good</b> business
-
+                <b>good</b> design
+                <br />
+                <b>good</b> business
                 </span>
                 <span className="subTitle">
                     We know that good design mean good

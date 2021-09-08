@@ -1,8 +1,22 @@
+@import '../../../global.scss';
+
 .container-feature {
     display: flex;
     height: 100vh;
+    
+    @include mobile{
+        flex-direction: column;
+        padding: 20px 30px;
+        align-items: center;
+        justify-content: center;
+      }
+      
     .left {
-        width: 80%;
+        width: 50%;
+
+        @include mobile{
+            display: none;
+          }
     }
 
     .right{
@@ -11,8 +25,16 @@
         flex-direction: column;
         justify-content: center;
 
+        @include mobile{
+            width: 100%;
+          }
+
         .title {
             font-size: 70px;
+
+            @include mobile{
+                font-size: 40px;
+              }
         }
 
         .subTitle{

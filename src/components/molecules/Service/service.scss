@@ -1,7 +1,13 @@
+@import '../../../global.scss';
 
 .container-service{
     display: flex;
     height: 100vh;
+
+    @include mobile{
+        flex-direction: column;
+      }
+    
     .left{
         width: 50%;
         img {
@@ -11,6 +17,10 @@
             left: 15px;
             // display:  ${(props) => (props.open && "none")};
             // background-color: purple;
+
+            @include mobile{
+                display: none;
+              }
         }
        
         .buka{
@@ -21,11 +31,18 @@
 
     .right {
         width: 50%;
+
+        @include mobile{
+            width: 100%;
+          }
         .wrapper{
             padding: 50px;
             display: flex;
             flex-direction: column;
 
+            @include mobile{
+                padding: 20px;
+              }
 
             .desc{
                 font-size: 20px;
